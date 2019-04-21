@@ -1,6 +1,6 @@
 # Gunbound (Thor's Hammer) Launcher (GUI)
 
-[gunbound-launcher](https://github.com/jglim/gunbound-launcher), but with the original interface!
+[gunbound-launcher](https://github.com/jglim/gunbound-launcher), with the original interface!
 
 ![Launcher Screenshot](https://raw.github.com/jglim/gunbound-launcher-gui/master/Other/launcher.png)
 
@@ -17,6 +17,8 @@ NOTE: This project is very preliminary, and requires some configuration before b
 - Original Softnyx interface! Even includes the raon MessageBox (documentation pending).
 - Thinned version of [gunbound-launcher](https://github.com/jglim/gunbound-launcher). Most of the technical details are in that repo.
 - Most of the UI plumbing is already done. Just add logic! (and your own update mechanism)
+
+![Kitchen Sink Screenshot](https://raw.github.com/jglim/gunbound-launcher-gui/master/Other/kitchen_sink.gif)
 
 # License
 
