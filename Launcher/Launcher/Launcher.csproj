@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E44AEE91-9F08-44D7-A859-FDD3E5F5E314}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Launcher</RootNamespace>
+    <AssemblyName>Launcher</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>false</DebugSymbols>
+    <DebugType>none</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>none</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>launcher_icon_32.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="GBMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GBMessageBox.Designer.cs">
+      <DependentUpon>GBMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GunBoundLauncher.cs" />
+    <Compile Include="KitchenSink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KitchenSink.Designer.cs">
+      <DependentUpon>KitchenSink.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NativeAPI.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="GBMessageBox.resx">
+      <DependentUpon>GBMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KitchenSink.resx">
+      <DependentUpon>KitchenSink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\frame.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel_ride.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\option_ride.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register_click.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register_normal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\register_ride.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="launcher_icon_32.ico" />
+    <None Include="Resources\msgbox_prefix.png" />
+    <None Include="Resources\login.png" />
+    <None Include="Resources\progress.png" />
+    <None Include="Resources\direct_down.png" />
+    <None Include="Resources\vc_anim_3.png" />
+    <None Include="Resources\vc_anim_2.png" />
+    <None Include="Resources\vc_anim_1.png" />
+    <None Include="Resources\vc_anim_0.png" />
+    <None Include="Resources\checking_version.png" />
+    <None Include="Resources\sys_close_normal.PNG" />
+    <None Include="Resources\sys_close_click.png" />
+    <None Include="Resources\sys_minimize_normal.png" />
+    <None Include="Resources\sys_minimize_click.png" />
+    <None Include="Resources\forget_pwd_normal.png" />
+    <None Include="Resources\forget_pwd_click.png" />
+    <None Include="Resources\user_down_ride.png" />
+    <None Include="Resources\user_down_normal.png" />
+    <None Include="Resources\user_down_click.png" />
+    <None Include="Resources\start_game_ride.png" />
+    <None Include="Resources\start_game_normal.png" />
+    <None Include="Resources\start_game_click.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
