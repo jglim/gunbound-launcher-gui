@@ -4,6 +4,8 @@
 
 ![Launcher Screenshot](https://raw.github.com/jglim/gunbound-launcher-gui/master/Other/launcher.png)
 
+NOTE: This project is very preliminary, and requires some configuration before being usable.
+
 ### Quick Start
 
 - Edit the registry settings in the project to point to your server
@@ -12,8 +14,9 @@
 
 ### Features
 
-- Original Softnyx interface!
+- Original Softnyx interface! Even includes the raon MessageBox (documentation pending).
 - Thinned version of [gunbound-launcher](https://github.com/jglim/gunbound-launcher). Most of the technical details are in that repo.
+- Most of the UI plumbing is already done. Just add logic! (and your own update mechanism)
 
 # License
 
